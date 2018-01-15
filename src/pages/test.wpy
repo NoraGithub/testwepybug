@@ -1,0 +1,26 @@
+<template>
+  {{ch}}
+  <c1 :id.sync="{{ch}}"></c1>
+  <c2 :id.sync="dd"></c2>
+</template>
+
+<script>
+import wepy from 'wepy'
+import CV from '../components/canvas'
+
+export default class Test extends wepy.page {
+  config = {}
+  components = {
+    c1: CV,
+    c2: CV
+  }
+  data = {
+    ch: 3
+  }
+  computed = {
+    dd(){
+      return this.ch
+    }
+  }
+}
+</script>
