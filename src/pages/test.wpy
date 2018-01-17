@@ -1,6 +1,6 @@
 <template>
-  {{ch}}
-  <c1 :id.sync="{{ch}}"></c1>
+  <view>{{ch}}</view>
+  <c1 :id.sync="ch"></c1>
   <c2 :id.sync="dd"></c2>
 </template>
 
