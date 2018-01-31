@@ -6,11 +6,10 @@
 
   export default class CV extends wepy.component {
     data ={
-      id: 1
     }
     props = {
       id: {
-        type: String,
+        type: [String,Number],
         twoWay: false
       }
     }
